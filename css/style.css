@@ -1,0 +1,481 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+    list-style: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+button:not([disabled]) {
+    cursor:pointer;
+}
+
+
+
+
+:root {
+    --main-black: #131313;
+    --main-white: #fff;
+}
+::selection {
+    color: var(--main-white);
+    background: var(--main-black);
+}
+* {margin: 0; font-family: 'DM Sans', sans-serif; color: var(--main-black);}
+p {line-height: 170%;}
+
+
+
+
+
+
+
+header {
+    width: 100%;
+    padding: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+
+    transition: .4s;
+}
+#name {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+    font-size: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-white);
+    z-index: 100;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+    transition: width 0.5s;
+}
+.loader.passAnimation {
+    height: 0vh;
+    transition: 1s ease-out;
+}
+.loader.passAnimation span {visibility: hidden;}
+#loadingbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15vh;
+    background-color: blueviolet;
+    transition: width 0.5s;
+}
+.loader.passAnimation #loadingbar {width: 100%;}
+
+
+
+
+
+
+
+
+
+
+.grid--images {
+    padding-top: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 2fr) 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+}
+#img1 {grid-area: 1 / 8 / 2 / 12;}
+#img2 {grid-area: 2 / 5 / 3 / 9;}
+#img3 {grid-area: 3 / 2 / 4 / 6;}
+#img4 {grid-area: 4 / 7 / 5 / 11;}
+.grid--images li img {object-fit: cover; width: 100%;}
+
+
+
+
+
+
+
+.grid--parent {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    padding: 10rem 7rem;
+    background-color: #fff;
+}
+.about {padding-bottom: 5rem;}
+.about div {padding: 0rem 2rem;}
+.about p {max-width: 40vw;}
+.about button {
+    margin: 2rem 0rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: wavy underline #fcbf49;
+    border: none;
+    background-color: transparent;
+}
+
+.grid--WID {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 56px;
+}
+.wid {padding-left: 2rem;}
+.wid h3 {font-size: 2rem; font-weight: normal; margin-bottom: .75rem;}
+
+
+
+
+
+
+
+
+.project {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 10rem;
+    position: sticky;
+    top: 0;
+}
+#lastProject {margin-bottom: 0;}
+.project>img {width: 50%; object-fit: cover;}
+
+.project>div {
+    width: 50%;
+    padding: 7rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pcTop h1 {font-weight: bold; font-size: 4rem;}
+.tags {margin-top: 1.5rem;}
+.tags p {
+    display: inline;
+    border: .5px solid var(--main-black);
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+    margin-right: .5rem;
+    font-size: .75rem;
+}
+.pcBottom p {max-width: 70%; text-transform: capitalize;}
+.pcBottom button {
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    border: .5px solid var(--main-black);
+}
+
+
+
+
+
+
+
+
+.contact>div {padding: 0rem 2rem;}
+.contact div p {max-width: 40vw; margin: 0;}
+#contactOptions {margin: 3rem 0rem;}
+#contactOptions a {
+    display: inline;
+    margin-right: 3rem;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+footer>div:last-of-type {
+    font-size: .75rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    header {padding: 3.5rem 2rem; width: 100vw;}
+    #name {font-size: 3rem; padding: 0; width: 100vw;}
+
+
+
+    #img1 {grid-area: 1 / 6 / 2 / 12;}
+    #img2 {grid-area: 2 / 4 / 3 / 10;}
+    #img3 {grid-area: 3 / 2 / 4 / 8;}
+    #img4 {grid-area: 4 / 5 / 5 / 11;}
+
+
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+        padding: 10rem 3rem 2rem 3rem;
+    }
+    .about div {padding: 0;}
+    .about p {max-width: 100%;}
+
+
+
+    .whatIDo {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 12fr;
+        padding: 10rem 3rem 10rem 3rem;
+    }
+    .grid--WID {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 48px;
+    }
+    .wid {margin: 0 auto; padding: 0rem;}
+    .wid li p {max-width: 100%;}
+
+
+
+    .project {
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: .3px dotted var(--main-black);
+
+        margin-bottom: 0;
+        height: 100%;
+    }
+    .project>img {width: 100%; height: 40%; object-fit: cover;}
+    .project>div {
+        width: 100%;
+        height: 60%;
+        padding: 4.5rem 2rem;
+    }
+    .pcTop h1 {font-size: 2.5rem;}
+    .tags {margin: 1rem 0rem 2rem 0rem;}
+    .tags p {padding: .5rem 1rem; margin-right: .5rem; font-size: .75rem;}
+    .pcBottom p {max-width: 100%;}
+    .pcBottom button {
+        padding: .75rem;
+        border-radius: 2rem;
+        margin-top: 3rem;
+        border: .5px solid var(--main-black);
+    }
+
+
+
+    .contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        padding: 10rem 3rem 2rem 3rem;
+    }
+    .contact div {padding: 0;}
+    .contact div p {max-width: 100%; margin: 0;}
+    #contactOptions a {display: block; margin: 1rem 0rem;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    header {padding: 3.5rem 2rem; width: 100vw;}
+    #name {font-size: 3rem; padding: 0; width: 100vw;}
+
+
+
+    #img1 {grid-area: 1 / 6 / 2 / 12;}
+    #img2 {grid-area: 2 / 4 / 3 / 10;}
+    #img3 {grid-area: 3 / 2 / 4 / 8;}
+    #img4 {grid-area: 4 / 5 / 5 / 11;}
+
+
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+        padding: 10rem 4rem 2rem 4rem;
+    }
+    .about div {padding: 0;}
+    .about p {max-width: 100%;}
+
+
+
+    .whatIDo {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 10fr;
+        padding: 10rem 4rem 10rem 4rem;
+    }
+    .grid--WID {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 48px;
+    }
+    .wid {margin: 0 auto; padding: 0rem;}
+    .wid li p {max-width: 100%;}
+
+
+
+    .project {
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: .3px dotted var(--main-black);
+
+        margin-bottom: 0;
+        height: 100%;
+    }
+    .project>img {width: 100%; height: 40%; object-fit: cover;}
+    .project>div {
+        width: 100%;
+        height: 60%;
+        padding: 3rem 4rem;
+    }
+    .pcTop h1 {font-size: 2.5rem;}
+    .tags {margin: 1rem 0rem 2rem 0rem;}
+    .tags p {padding: .5rem 1rem; margin-right: .5rem; font-size: .75rem;}
+    .pcBottom p {max-width: 100%;}
+    .pcBottom button {
+        padding: .75rem;
+        border-radius: 2rem;
+        margin-top: 3rem;
+        border: .5px solid var(--main-black);
+    }
+
+
+
+    .contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        padding: 10rem 4rem 2rem 4rem;
+    }
+    .contact div {padding: 0;}
+    .contact div p {max-width: 100%; margin: 0;}
+    #contactOptions a {display: block; margin: 1rem 0rem;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #name {font-size: 5rem;}
+
+
+    #img1 {grid-area: 1 / 6 / 2 / 12;}
+    #img2 {grid-area: 2 / 4 / 3 / 10;}
+    #img3 {grid-area: 3 / 2 / 4 / 8;}
+    #img4 {grid-area: 4 / 5 / 5 / 11;}
+
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+        padding: 10rem 4rem 2rem 4rem;
+    }
+    .about p {max-width: 100%;}
+
+
+    .whatIDo {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 10fr;
+        padding: 10rem 4rem 10rem 4rem;
+    }
+    .grid--WID {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 64px;
+    }
+    .wid {margin: 0 auto; padding: 0rem 2rem;}
+    .wid li p {max-width: 100%;}
+
+
+    .project {flex-direction: column; justify-content: space-between; border-top: .3px dotted var(--main-black);}
+    .project>img {width: 100%; height: 40%; object-fit: cover;}
+    .project>div {
+        width: 100%;
+        height: 60%;
+        padding: 4rem 3rem;
+    }
+
+
+    .contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        padding: 10rem 4rem 2rem 4rem;
+    }
+    .contact div p {max-width: 100%; margin: 0;}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    #name {font-size: 5rem;}
+
+
+    .grid--parent {
+        padding: 10rem 4rem;
+    }
+    .about {padding-bottom: 0;}
+    .about p {max-width: 90vw;}
+
+
+    .grid--WID {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 80px;
+    }
+    .wid {padding: 0rem 2rem 0rem 2rem;}
+    .wid li p {max-width: 80%;}
+
+
+    .project>div {width: 50%; padding: 6rem 2rem;}
+    .pcTop h1 {font-size: 2.75rem;}
+    .pcBottom p {max-width: 85%; font-size: .9rem;}
+    .pcBottom button {padding: .5rem; margin-top: 1.5rem;}
+}
+
+
+/* Default aspect ratio */
+@media only screen and (min-width: 1440px) {
+
+}
