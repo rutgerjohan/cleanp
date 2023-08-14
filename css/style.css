@@ -264,6 +264,7 @@ footer>div:last-of-type {
 
 
 
+    .whatIDo {padding-bottom: 10rem;}
     .grid--WID {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
