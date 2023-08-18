@@ -1,0 +1,88 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+    list-style: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+button:not([disabled]) {
+    cursor:pointer;
+}
+
+
+:root {
+    --main-black: #131313;
+    --main-white: #fff;
+}
+::selection {
+    color: var(--main-white);
+    background: var(--main-black);
+}
+* {margin: 0; font-family: 'DM Sans', sans-serif; color: var(--main-black);}
+p {line-height: 170%;}
+
+
+
+
+
+
+
+
+header {
+    width: 100%;
+    padding: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+
+    transition: .4s;
+}
+#breadcrumbs {
+    padding: 10rem 15rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer>div:last-of-type {
+    font-size: .75rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    header {padding: 3rem 1.75rem; width: 100vw;}
+    header p {font-size: .9rem;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    header {padding: 3.5rem 2rem; width: 100vw;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
