@@ -245,16 +245,159 @@ footer>div:last-of-type {
 @media only screen and (max-width: 480px) {
     header {padding: 3rem 1.75rem; width: 100vw;}
     header p {font-size: .9rem;}
+
+
+
+    #projectName {font-size: 2rem;}
+
+
+
+    #breadcrumbs {padding: 10rem 3rem 0rem 3rem;}
+
+
+
+    .contentContainer {padding: 4rem .75rem;}
+    .mockup div {padding: .5rem;}
+    .mockup div img {border-radius: .5rem;}
+
+
+    
+    .information p {font-size: 1rem;}
+
+
+
+    .color {padding: 1.5rem 1rem;}
+
+
+
+    .typography {text-align: center;}
+    .typography>div:first-of-type {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 16px;
+    }
+    .typography>div:last-of-type {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 16px;
+    }
+    .typography>div:first-of-type>p {font-size: 7rem;}
+    .typography>div:last-of-type p:first-of-type {font-size: 8rem;}
+    .typography>div:last-of-type p:last-of-type {font-size: 1.75rem;}
+
+
+
+    .others ol {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 32px;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     header {padding: 3.5rem 2rem; width: 100vw;}
+    #projectName {font-size: 3rem;}
+
+
+
+    #breadcrumbs {padding: 10rem 4rem 0rem 4rem;}
+
+
+
+    .contentContainer {padding: 4rem 1rem;}
+    .mockup div {padding: .5rem;}
+    .mockup div img {border-radius: .5rem;}
+
+
+
+    .information p {font-size: 1rem;}
+
+
+
+    .color {padding: 1.5rem 1rem;}
+
+
+
+    .typography {text-align: center;}
+    .typography>div:first-of-type {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 16px;
+    }
+    .typography>div:last-of-type {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 16px;
+    }
+    .typography>div:first-of-type>p {font-size: 7rem;}
+    .typography>div:last-of-type p:first-of-type {font-size: 8rem;}
+    .typography>div:last-of-type p:last-of-type {font-size: 1.75rem;}
+
+
+
+    .others ol {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 32px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #breadcrumbs {padding: 13rem 10rem 0rem 10rem;}
 
+
+
+    .contentContainer {padding: 6rem 3rem;}
+    .mockup div {padding: 2rem;}
+
+
+
+    .information p {font-size: 1.5rem;}
+
+
+    .typography {text-align: center;}
+    .typography>div:first-of-type {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 24px;
+    }
+    .typography>div:last-of-type {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 24px;
+    }
+    .typography>div:first-of-type>p {font-size: 7rem;}
+    .typography>div:last-of-type p:first-of-type {font-size: 8rem;}
+    .typography>div:last-of-type p:last-of-type {font-size: 1.75rem;}
+
+
+
+    .others ol {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 32px;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .contentContainer {padding: 8rem 4rem;}
 
+
+    .information p {font-size: 1.5rem;}
+
+    .typography>div:first-of-type>p {font-size: 7rem;}
+    .typography>div:last-of-type p:first-of-type {font-size: 8rem;}
+    .typography>div:last-of-type p:last-of-type {font-size: 1.75rem;}
 }
