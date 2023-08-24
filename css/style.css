@@ -296,7 +296,7 @@ footer>div:last-of-type {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
-        grid-row-gap: 48px;
+        grid-row-gap: 40px;
         align-items: center;
     }
     .wid {margin: 0 auto; padding: 0rem;}
@@ -324,9 +324,9 @@ footer>div:last-of-type {
     .pcBottom p {max-width: 100%;}
     .pcBottom button {
         padding: .75rem;
-        border-radius: 2rem;
-        margin-top: 1rem;
         border: .5px solid var(--main-black);
+        border-radius: .25rem;
+        margin-top: 1rem;
     }
 
 
@@ -398,7 +398,7 @@ footer>div:last-of-type {
     .pcBottom p {max-width: 100%;}
     .pcBottom button {
         padding: .75rem;
-        border-radius: 2rem;
+        border-radius: .25rem;
         margin-top: 1rem;
         border: .5px solid var(--main-black);
     }
