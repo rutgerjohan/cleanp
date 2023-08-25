@@ -93,23 +93,11 @@ header {
 #projectExp {max-width: 90%; margin: 0 auto;}
 
 
-/* #projectInfo>div div {height: 5rem; width: 5rem;}
-#white {background-color: #F9F9FA; border-radius: 2rem .25rem .25rem .25rem;}
-#orange {background-color: #FF7F50; border-radius: .25rem 2rem .25rem .25rem;}
-#green {background-color: #98FF98; border-radius: .25rem .25rem 2rem .25rem;} */
 
 
 
 
-main>img {
-    width: 100%;
-}
-
-
-
-
-
-
+main>img {width: 100%;}
 
 
 
@@ -152,6 +140,7 @@ main>img {
     margin: 0 auto;
     font-size: 3rem;
 }
+
 
 
 
