@@ -16,6 +16,7 @@ button:not([disabled]) {
 :root {
     --main-black: #131313;
     --main-white: #fff;
+    --background-grey: #f9f9f9;
 }
 ::selection {
     color: var(--main-white);
@@ -263,16 +264,16 @@ footer>div:last-of-type {
 
 
 @media only screen and (max-width: 480px) {
-    header {padding: 3rem 1.75rem; width: 100vw;}
+    header {padding: 2.5rem 1.25rem; width: 100vw;}
     header p {font-size: .9rem;}
     #name {font-size: 3rem; padding: 0; width: 100vw;}
 
 
 
-    #img1 {grid-area: 1 / 6 / 2 / 12;}
-    #img2 {grid-area: 2 / 4 / 3 / 10;}
-    #img3 {grid-area: 3 / 2 / 4 / 8;}
-    #img4 {grid-area: 4 / 5 / 5 / 11;}
+    #img1 {grid-area: 1 / 4 / 2 / 12;}
+    #img2 {grid-area: 2 / 2 / 3 / 10;}
+    #img3 {grid-area: 3 / 2 / 4 / 12;}
+    #img4 {grid-area: 4 / 3 / 5 / 11;}
 
 
 
@@ -319,7 +320,7 @@ footer>div:last-of-type {
         padding: 4.5rem 2rem;
     }
     .pcTop h1 {font-size: 2.5rem;}
-    .tags {margin: 1.5rem 0rem 4rem 0rem;}
+    .tags {margin: 1.5rem 0rem 8rem 0rem;}
     .tags p {padding: .5rem 1rem; margin-right: .5rem; font-size: .75rem;}
     .pcBottom p {max-width: 100%;}
     .pcBottom button {

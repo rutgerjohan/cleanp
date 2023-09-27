@@ -269,7 +269,7 @@ footer>div:last-of-type {
 
 
 @media only screen and (max-width: 480px) {
-    header {padding: 3rem 1.75rem; width: 100vw;}
+    header {padding: 2.5rem 1.25rem; width: 100vw;}
     header p {font-size: .9rem;}
 
 
