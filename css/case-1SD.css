@@ -16,19 +16,8 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 
-    background-color: #f9f9f9;
+    background-color: var(--background-grey);
 }
-.color {
-    width: 100%;
-    height: 45vh;
-    border-radius: 2rem;
-    padding: 1.5rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.color p:last-of-type {font-size: 3rem;}
 #SD-cbase {background-color: #f6f9fc; grid-area: 1 / 1 / 2 / 3;}
 #SD-c1 {background-color: #ff7f50; grid-area: 1 / 2 / 2 / 4;}
 #SD-c2 {background-color: #98ff98; grid-area: 1 / 3 / 2 / 5;}
@@ -51,157 +40,49 @@
 
 
 
-.others ol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 0px;
-
-    place-items: center;
-}
-.others ol li img {
-    width: 100%;
-    border-radius: .5rem;
-}
-.others ol li div {
-    display: flex;
-    justify-content: space-between;
-    padding: 0rem .5rem;
-}
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 480px) {
     .information div {padding: 0;}
     .information p {max-width: 100%;}
 
-
-
-
-
-    .contentContainer {padding: 4rem .75rem;}
-    .mockup div {padding: .5rem;}
-    .mockup div img {border-radius: .5rem;}
-
-
-    
-    .information p {font-size: 1rem;}
-
-
-
-    .color {padding: 1.5rem 1rem;}
-
-
-
+    .colors {padding: 3rem 1rem;}
 
     .typography>div:first-of-type>p {font-size: 7rem;}
     .typography>div:last-of-type p:first-of-type {font-size: 8rem;}
     .typography>div:last-of-type p:last-of-type {font-size: 1.75rem;}
-
-
-
-    .others ol {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 32px;
-    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .information div {padding: 0;}
     .information p {max-width: 100%;}
 
+    .colors {padding: 3rem 4rem;}
 
-
-    .contentContainer {padding: 4rem 1rem;}
-    .mockup div {padding: .5rem;}
-    .mockup div img {border-radius: .5rem;}
-
-
-
-    .information p {font-size: 1rem;}
-
-
-
-    .color {padding: 1.5rem 1rem;}
-
-
-    
     .typography>div:first-of-type>p {font-size: 7rem;}
     .typography>div:last-of-type p:first-of-type {font-size: 8rem;}
     .typography>div:last-of-type p:last-of-type {font-size: 1.75rem;}
-
-
-
-    .others ol {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 32px;
-    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #breadcrumbs {padding: 10rem 3rem 3rem 3rem;}
-
-
-
     .information {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 5fr;
-        padding: 10rem 4rem 2rem 4rem;
+        padding: 10rem 4rem;
     }
-    .information p {max-width: 100%;}
+    .information p {max-width: 100%; font-size: 1.5rem;}
 
-
-
-    .contentContainer {padding: 6rem 3rem;}
-    .mockup div {padding: 2rem;}
-
-
-
-    .information p {font-size: 1.5rem;}
-
-
-    
+    .colors {padding: 3rem 4rem;}
 
     .typography>div:first-of-type>p {font-size: 7rem;}
     .typography>div:last-of-type p:first-of-type {font-size: 8rem;}
     .typography>div:last-of-type p:last-of-type {font-size: 1.75rem;}
-
-
-
-    .others ol {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 32px;
-    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-    .information {padding-bottom: 0;}
     .information p {max-width: 90vw;}
 
-
-
-    .contentContainer {padding: 8rem 4rem;}
-
-
-    .information p {font-size: 1.5rem;}
+    .colors {padding: 3rem 4rem;}
 
     .typography>div:first-of-type>p {font-size: 7rem;}
     .typography>div:last-of-type p:first-of-type {font-size: 8rem;}

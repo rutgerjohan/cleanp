@@ -1,4 +1,4 @@
-.loader {
+/* .loader {
     height: 100vh;
     width: 100%;
     background-color: var(--main-white);
@@ -24,7 +24,7 @@
     background-color: blueviolet;
     transition: width 0.5s;
 }
-.loader.passAnimation #loadingbar {width: 100%;}
+.loader.passAnimation #loadingbar {width: 100%;} */
 
 
 
@@ -69,7 +69,6 @@
 
 .about>div, .wid, .contact>div {padding: 0rem 2rem;}
 
-.about {padding-bottom: 5rem;}
 .about p {max-width: 40vw;}
 .about button {
     margin: 2rem 0rem;
@@ -309,7 +308,7 @@
     .about {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 5fr;
-        padding: 10rem 4rem 2rem 4rem;
+        padding: 10rem 4rem;
     }
     .about p {max-width: 100%;}
 
@@ -355,8 +354,7 @@
 
     .grid--parent {
         padding: 10rem 4rem;
-    }
-    .about {padding-bottom: 0;}
+    }   
     .about p {max-width: 90vw;}
 
 
