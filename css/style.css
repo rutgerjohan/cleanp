@@ -316,13 +316,12 @@ footer>div:last-of-type {
     .project>img {width: 100%; height: 40%;}
     .project>div {
         width: 100%;
-        height: 60%;
         padding: 4.5rem 2rem;
     }
     .pcTop h1 {font-size: 2.5rem;}
     .tags {margin: 1.5rem 0rem 8rem 0rem;}
     .tags p {padding: .5rem 1rem; margin-right: .5rem; font-size: .75rem;}
-    .pcBottom p {max-width: 100%;}
+    .pcBottom p {max-width: 100%; padding-top: 2rem;}
     .pcBottom button {
         padding: .75rem;
         border: .5px solid var(--main-black);
