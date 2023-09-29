@@ -112,6 +112,12 @@
     top: 0;
 }
 #lastProject {margin-bottom: 0;}
+#lastProject button {opacity: .5;}
+#lastProject button:after {content: ""; visibility: hidden;}
+#lastProject button:hover a {color: var(--main-black);}
+
+
+
 .project>img {width: 50%; object-fit: cover;}
 
 .project>div {
